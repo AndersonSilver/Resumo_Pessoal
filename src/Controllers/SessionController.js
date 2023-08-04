@@ -1,6 +1,6 @@
 class SessionController {
   async inicial(req, res) {
-    res.render("../view/index");
+    res.render("../views/index");
   }
 }
 

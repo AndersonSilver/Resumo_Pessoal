@@ -17,7 +17,7 @@ class app {
     this.server.use(express.json());
     this.server.use(bodyParser.json());
     this.server.set("view engine", "ejs");
-    this.server.set("view", __dirname + "/view");
+    this.server.set("views", __dirname + "/views");
     this.server.use(
       express.static(__dirname + "/public", {
         setHeaders: function (res, path, stat) {
